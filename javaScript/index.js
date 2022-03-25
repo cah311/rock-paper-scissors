@@ -1,13 +1,22 @@
 
 let playerSelection = prompt("Rock, Paper, or Scissors");
-console.log(playerSelection);
+
+function computerPlay() {
+    const options = ["Rock", "Paper", "Scissors"];
+    let computerPlay = options[Math.floor(Math.random()*options.length)];
+    return computerPlay; 
+    
+}
+
 
 function playRound(playerSelection, computerSelection) {
     
 }
 
 
-// const computerSelection = computerPlay();
+const computerSelection = computerPlay();
+
+console.log(computerSelection);
 // console.log(playRound(playerSelection, computerSelection));
 
 // function game() {
