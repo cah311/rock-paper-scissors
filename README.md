@@ -46,4 +46,10 @@
        
     
     4. Subproblems
+    - need to create variable to keep track of game rounds
+    - need to create variables to keep track of round winners
+    - need to get pick from user 
+    - need to generate computer pick 
+    - need to compare the two and record winner based on parameters 
+    - need to print all resluts 
        

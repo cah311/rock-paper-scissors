@@ -10,29 +10,29 @@ function computerPlay() {
 
 
 function playRound(playerSelection, computerSelection) {
-    if ((playerSelection = 'Rock') && (computerSelection = 'Scissors')) {
+    if ((playerSelection == 'Rock') && (computerSelection == 'Scissors')) {
         
         let result = ("You Win! Rock beats Scissors");
         return result; 
 
-    } else if ((playerSelection = 'Rock') && (computerSelection = 'Paper')) {
+    } else if ((playerSelection == 'Rock') && (computerSelection == 'Paper')) {
         
         let result = ("You lose! Paper beats Rock");
         return result; 
 
-    } else if ((playerSelection = 'Paper') && (computerSelection = 'Rock')) {
+    } else if ((playerSelection == 'Paper') && (computerSelection == 'Rock')) {
         
         let result = ("You Win! Paper beats Rock");
         return result;
 
-    } else if ((playerSelection = 'Paper') && (computerSelection = 'Scissors')) {
+    } else if ((playerSelection == 'Paper') && (computerSelection == 'Scissors')) {
 
         let result = ("You lose! Scissors beats Paper");
         return result;
 
-    } else if (playerSelection = computerSelection) {
+    } else if (playerSelection == computerSelection) {
         
-        let result =("It's a tie!");
+        let result = ("It's a tie!");
         return result;
         
     }
