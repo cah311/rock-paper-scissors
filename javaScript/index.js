@@ -1,5 +1,7 @@
 
-let playerSelection = prompt("Rock, Paper, or Scissors");
+ let choice = prompt("Rock, Paper, or Scissors");
+ let playerSelection = choice.toUpperCase();
+ console.log("playerSelection: ", playerSelection);
 
 function computerPlay() {
     const options = ["Rock", "Paper", "Scissors"];
