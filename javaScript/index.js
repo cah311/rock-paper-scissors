@@ -20,12 +20,21 @@ function playRound(playerSelection, computerSelection) {
         let result = ("You lose! Paper beats Rock");
         return result; 
 
+    } else if ((playerSelection == 'Paper') && (computerSelection == 'Rock')) {
+        
+        let result = ("You Win! Paper beats Rock");
+        return result;
+
+    } else if ((playerSelection == 'Paper') && (computerSelection == 'Scissors')) {
+
+        let result = ("You lose! Scissors beats Paper");
+        return result;
 
     } else if (playerSelection == computerSelection) {
         
         let result =("It's a tie!");
         return result;
-
+        
     }
 
     
