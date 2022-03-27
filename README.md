@@ -53,3 +53,9 @@
     - need to compare the two and record winner based on parameters 
     - need to print all resluts 
        
+
+Current to do: 
+1. Fix case sensitivity
+2. Create varibable to tracks and displays user & computer wins through a loop
+3. Create function that announces winner after 5 rounds
+4. Have the program reset and re-prompt without hitting refresh. 

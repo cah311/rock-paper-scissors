@@ -30,6 +30,16 @@ function playRound(playerSelection, computerSelection) {
         let result = ("You lose! Scissors beats Paper");
         return result;
 
+    } else if ((playerSelection == 'Scissors') && (computerSelection == 'Rock')) {
+        
+        let result = ("You lose! Rock beats Scissors");
+        return result;
+
+    } else if ((playerSelection == 'Scissors') && (computerSelection == 'Paper')) {
+
+        let result = ("You Win! Scissors beats Paper");
+        return result;
+
     } else if (playerSelection == computerSelection) {
         
         let result = ("It's a tie!");
