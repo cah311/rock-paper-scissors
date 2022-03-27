@@ -1,6 +1,12 @@
 
- let choice = prompt("Rock, Paper, or Scissors");
- let playerSelection = choice.toUpperCase();
+ let playerSelection;
+ 
+ do {
+    playerSelection  = prompt("Rock, Paper, or Scissors");
+    playerSelection = playerSelection.toUpperCase();
+ } while ((playerSelection !== "ROCK") && (playerSelection !== "PAPER") && (playerSelection !== "SCISSORS")) 
+ 
+
  console.log("playerSelection: ", playerSelection);
 
 function computerPlay() {
