@@ -2,6 +2,7 @@ let playerWins = 0;
 let computerWins = 0;
 game();
 
+/* Prompt for user selection */ 
 function playerChoice () {
     let choice;
     
@@ -13,20 +14,15 @@ function playerChoice () {
     return choice;
 }
 
-
-
+/* Generates random selection for computer */ 
 function computerPlay() {
     const options = ["ROCK", "PAPER", "SCISSORS"];
     let computerPlay = options[Math.floor(Math.random()*options.length)];
     return computerPlay; 
     
 }
-
-
-
-
-    
-
+  
+/* Compares selections and returns a winner for the round */ 
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection == 'ROCK') && (computerSelection == 'SCISSORS')) {
         
@@ -73,7 +69,7 @@ function playRound(playerSelection, computerSelection) {
     }  
     return playRound();
 }
-
+/* Plays the full game for 5 rounds */ 
 function game() {
 
     

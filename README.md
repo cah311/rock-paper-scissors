@@ -1,6 +1,6 @@
 # rock-paper-scissors PT 1
 1. Understand the Problem 
-    - reword if if needed
+    - reword it if needed
 2. Plan 
     - answer general questions 
     --does program have user interface?
@@ -10,7 +10,7 @@
     --Given the inputs, what steps are neccessary to return desired output
 3. Psudocode 
     - write out code in natural language that will solve the last question from before
-4. Divide and concuer
+4. Divide and conquer
     - identify subproblems from the big problem, dont go after big problem from the start. Break it down and start with the smallest problems and work your way up
    
 
@@ -54,8 +54,3 @@
     - need to print all resluts 
        
 
-Current to do: 
-- Create a variable that tracks and displays game round 
-- Create varibable to tracks and displays user & computer wins through a loop
-- Create function that announces winner after 5 rounds
-- Have the program reset and re-prompt without hitting refresh. 
