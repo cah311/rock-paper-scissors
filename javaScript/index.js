@@ -1,13 +1,23 @@
 
- let playerSelection;
- 
- do {
-    playerSelection  = prompt("Rock, Paper, or Scissors");
-    playerSelection = playerSelection.toUpperCase();
- } while ((playerSelection !== "ROCK") && (playerSelection !== "PAPER") && (playerSelection !== "SCISSORS")) 
- 
 
- console.log("playerSelection: ", playerSelection);
+
+function playerChoice () {
+    let choice;
+    
+    do {
+        choice  = prompt("Rock, Paper, or Scissors");
+        choice = choice.toUpperCase();
+    } while ((choice !== "ROCK") && (choice !== "PAPER") && (choice !== "SCISSORS")) 
+
+    return choice;
+}
+
+const playerSelection = playerChoice();
+
+
+
+
+console.log("playerSelection: ", playerSelection);
 
 function computerPlay() {
     const options = ["ROCK", "PAPER", "SCISSORS"];
@@ -15,7 +25,12 @@ function computerPlay() {
     return computerPlay; 
     
 }
+const computerSelection = computerPlay();
+console.log("computerSelection: ", computerSelection);
 
+
+
+    
 
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection == 'ROCK') && (computerSelection == 'SCISSORS')) {
@@ -53,20 +68,15 @@ function playRound(playerSelection, computerSelection) {
         let result = ("It's a tie!");
         return result;
         
-    }
-
-    
-    
+    }  
+    return playRound();
 }
-
-
-const computerSelection = computerPlay();
-
-console.log(computerSelection);
 console.log(playRound(playerSelection, computerSelection));
 
-// function game() {
-//     for (let i = 0; i <= 5; i++) {
-//         //code here
-//     }
-// }
+function game() {
+
+    for (let i = 1; i <= 5; i++) {        
+    
+    }
+        
+}
