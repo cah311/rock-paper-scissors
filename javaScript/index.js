@@ -79,6 +79,7 @@ function game() {
     
     for (let i = 1; i <= 5; i++) {        
     
+        console.log("----------------------------------");
         console.log("Round:", i);
         console.log("playerWins: ", playerWins);
         console.log("computerWins: ", computerWins);
@@ -93,6 +94,31 @@ function game() {
         playRound();
         console.log(playRound(playerSelection, computerSelection));
 
+        if (i == 5) {
+            if (playerWins > computerWins) {
+                console.log("----------------------------------");
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("You win the game!");
+                console.log("Score:", playerWins, "to", computerWins);
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("----------------------------------");
+
+            } else if (playerWins < computerWins) {
+                console.log("----------------------------------");
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("You lose the game."); 
+                console.log("Score:", playerWins, "to", computerWins);
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("----------------------------------");
+            } else if (playerWins == computerWins) {
+                console.log("----------------------------------");
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("It's a draw!");
+                console.log("Score:", playerWins, "to", computerWins);
+                console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                console.log("----------------------------------");
+            }
+        }
 
     }
         
