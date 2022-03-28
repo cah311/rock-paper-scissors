@@ -1,5 +1,4 @@
-
-
+game();
 
 function playerChoice () {
     let choice;
@@ -12,12 +11,7 @@ function playerChoice () {
     return choice;
 }
 
-const playerSelection = playerChoice();
 
-
-
-
-console.log("playerSelection: ", playerSelection);
 
 function computerPlay() {
     const options = ["ROCK", "PAPER", "SCISSORS"];
@@ -25,8 +19,7 @@ function computerPlay() {
     return computerPlay; 
     
 }
-const computerSelection = computerPlay();
-console.log("computerSelection: ", computerSelection);
+
 
 
 
@@ -71,12 +64,25 @@ function playRound(playerSelection, computerSelection) {
     }  
     return playRound();
 }
-console.log(playRound(playerSelection, computerSelection));
 
 function game() {
 
     for (let i = 1; i <= 5; i++) {        
     
+        console.log("Round:", i);
+        
+        
+        const playerSelection = playerChoice();
+        console.log("playerSelection: ", playerSelection);
+        
+        
+        const computerSelection = computerPlay();
+        console.log("computerSelection: ", computerSelection);
+
+        playRound();
+        console.log(playRound(playerSelection, computerSelection));
+
+
     }
         
 }
