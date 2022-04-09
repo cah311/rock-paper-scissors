@@ -69,11 +69,11 @@ function playRound(playerSelection, computerSelection) {
     }  
     return playRound();
 }
-/* Plays the full game for 5 rounds */ 
+/* Plays the full game up to 5 wins for a single player */ 
 function game() {
 
     
-    for (let i = 1; i <= 5; i++) {        
+    for (let i = 1; i <= 500; i++) {        
     
         console.log("----------------------------------");
         console.log("Round:", i);
@@ -90,7 +90,7 @@ function game() {
         playRound();
         console.log(playRound(playerSelection, computerSelection));
 
-        if (i == 5) {
+        if (playerWins == 5 || computerWins == 5) {
             if (playerWins > computerWins) {
                 console.log("----------------------------------");
                 console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
@@ -114,6 +114,7 @@ function game() {
                 console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
                 console.log("----------------------------------");
             }
+            return 
         }
 
     }
