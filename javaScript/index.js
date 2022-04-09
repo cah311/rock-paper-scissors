@@ -1,18 +1,47 @@
+
 let playerWins = 0;
 let computerWins = 0;
-game();
+//game();
+
 
 /* Prompt for user selection */ 
-function playerChoice () {
+function playerChoice() {
+    
+    
+    const btn = document.querySelectorAll('button');
+    const rBtn = document.getElementById("rBtn")
+    const pBtn = document.getElementById("pBtn")
+    const sBtn = document.getElementById("sBtn")
+
     let choice;
     
-    do {
-        choice  = prompt("Rock, Paper, or Scissors");
-        choice = choice.toUpperCase();
-    } while ((choice !== "ROCK") && (choice !== "PAPER") && (choice !== "SCISSORS")) 
-
-    return choice;
+    rBtn.onclick = function() {
+        choice = "ROCK"
+        console.log(choice);
+        return choice;
+    
+    }
+    pBtn.onclick = function() {
+        choice = "PAPER"
+        console.log(choice);
+        return choice;
+    
+    }
+    sBtn.onclick = function() {
+        choice = "SCISSORS"
+        console.log(choice);
+        return choice;
+    }
+    console.log(choice)
+   return choice;
+    // do {
+    //     choice  = prompt("Rock, Paper, or Scissors");
+    //     choice = choice.toUpperCase();
+    // } while ((choice !== "ROCK") && (choice !== "PAPER") && (choice !== "SCISSORS")) 
+    // return choice;
+    
 }
+console.log("PlayerSelection:", playerChoice())
 
 /* Generates random selection for computer */ 
 function computerPlay() {
