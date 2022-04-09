@@ -1,4 +1,12 @@
-# rock-paper-scissors PT 1
+# rock-paper-scissors UI
+
+Rock Paper Scissors Game 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
 1. Understand the Problem 
     - reword it if needed
 2. Plan 
