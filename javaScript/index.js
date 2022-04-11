@@ -30,6 +30,11 @@ playerSelectionR.addEventListener('click', function () {
     }
     console.log(playerWins);
     console.log(computerWins);
+    if (computerWins === 5) {
+        alert("Computer Wins the match")
+    } else if (playerWins === 5) {
+        alert("You win the match!")
+    }
     return
 
 });
@@ -59,6 +64,11 @@ playerSelectionP.addEventListener('click', function () {
     }
     console.log(playerWins);
     console.log(computerWins);
+    if (computerWins === 5) {
+        alert("Computer Wins the match")
+    } else if (playerWins === 5) {
+        alert("You win the match!")
+    }
     return
 });
 
@@ -87,6 +97,11 @@ playerSelectionS.addEventListener('click', function () {
     }
     console.log(playerWins);
     console.log(computerWins);
+    if (computerWins === 5) {
+        alert("Computer Wins the match")
+    } else if (playerWins === 5) {
+        alert("You win the match!")
+    }
     return
 });
     
@@ -104,6 +119,10 @@ function computerPlay() {
 }
 
 
-
+if (computerWins === 5) {
+    alert("Computer Wins the match")
+} else if (playerWins === 5) {
+    alert("You win the match!")
+}
 
   
