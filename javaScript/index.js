@@ -38,7 +38,7 @@ document.getElementById('.gameCommentText');
 
 const gameText = document.createElement('p');
 gameText.classList.add('gameText');
-gameText.textContent = "Choose Your Weapon!"
+gameText.textContent = "Choose Your Weapon... First to 5 wins the match!"
 
 gameCommentText.appendChild(gameText);
 
@@ -92,8 +92,23 @@ playerSelectionR.addEventListener('click', function () {
     console.log(computerWins);
     if (computerWins === 5) {
         alert("Computer Wins the match")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+        
+
     } else if (playerWins === 5) {
         alert("You win the match!")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+
     }
     return
 
@@ -143,8 +158,22 @@ playerSelectionP.addEventListener('click', function () {
     console.log(computerWins);
     if (computerWins === 5) {
         alert("Computer Wins the match")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+
     } else if (playerWins === 5) {
         alert("You win the match!")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+
     }
     return
 });
@@ -193,8 +222,22 @@ playerSelectionS.addEventListener('click', function () {
     console.log(computerWins);
     if (computerWins === 5) {
         alert("Computer Wins the match")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+
     } else if (playerWins === 5) {
         alert("You win the match!")
+        computerWins = 0
+        playerWins = 0
+        plrScore.textContent =  `${playerWins}`;
+        plrScoreBoard.appendChild(plrScore)
+        cmpScore.textContent =  `${computerWins}`;
+        cmpScoreBoard.appendChild(cmpScore)
+
     }
     return
 });
