@@ -62,7 +62,7 @@ playerSelectionR.addEventListener('click', function () {
         plrScore.textContent =  `${playerWins}`;
         plrScoreBoard.appendChild(plrScore);
 
-        gameText.textContent = "You Win! Rock beats Scissors";
+        gameText.textContent = "Computer chooses Scissors: You Win! Rock beats Scissors";
         gameCommentText.appendChild(gameText);
 
     } else if ((playerSelection == 'ROCK') && (computerSelection == 'PAPER')) {
@@ -74,7 +74,7 @@ playerSelectionR.addEventListener('click', function () {
         cmpScore.textContent =  `${computerWins}`;
         cmpScoreBoard.appendChild(cmpScore)
 
-        gameText.textContent = "You lose! Paper beats Rock";
+        gameText.textContent = "Computer chooses Paper:  You lose! Paper beats Rock";
         gameCommentText.appendChild(gameText);
 
 
@@ -113,7 +113,7 @@ playerSelectionP.addEventListener('click', function () {
         plrScore.textContent =  `${playerWins}`;
         plrScoreBoard.appendChild(plrScore)
 
-        gameText.textContent = "You Win! Paper beats Rock";
+        gameText.textContent = "Computer chooses Rock:  You Win! Paper beats Rock";
         gameCommentText.appendChild(gameText);
 
 
@@ -126,7 +126,7 @@ playerSelectionP.addEventListener('click', function () {
         cmpScore.textContent =  `${computerWins}`;
         cmpScoreBoard.appendChild(cmpScore)
 
-        gameText.textContent = "You lose! Scissors beats Paper";
+        gameText.textContent = "Computer chooses Paper:  You lose! Scissors beats Paper";
         gameCommentText.appendChild(gameText);
 
 
@@ -163,7 +163,7 @@ playerSelectionS.addEventListener('click', function () {
         plrScore.textContent =  `${playerWins}`;
         plrScoreBoard.appendChild(plrScore)
 
-        gameText.textContent = "You Win! Scissors beats Paper";
+        gameText.textContent = "Computer chooses Paper:  You Win! Scissors beats Paper";
         gameCommentText.appendChild(gameText);
 
 
@@ -176,7 +176,7 @@ playerSelectionS.addEventListener('click', function () {
         cmpScore.textContent =  `${computerWins}`;
         cmpScoreBoard.appendChild(cmpScore);
 
-        gameText.textContent = "You lose! Rock beats Scissors";
+        gameText.textContent = "Computer chooses Paper:  You lose! Rock beats Scissors";
         gameCommentText.appendChild(gameText);
 
 
