@@ -5,9 +5,8 @@ let playerSelection;
 let computerSelection;
 let round = 0; 
 
-//const container = document.getElementById('.scoareBoard');
-
-document.getElementById('.plrScoreBoard')
+//Generates Player Score Text 
+document.getElementById('.plrScoreBoard');
 
 const plrTitle = document.createElement('p');
 plrTitle.classList.add('plrTitle');
@@ -16,8 +15,12 @@ const plrScore = document.createElement('p');
 plrScore.classList.add('plrScore');
 plrScore.textContent =  `${playerWins}`;
 
-document.getElementById('.cmpScoreBoard')
+plrScoreBoard.appendChild(plrTitle)
+plrScoreBoard.appendChild(plrScore)
 
+
+//Generates Computer Score Text
+document.getElementById('.cmpScoreBoard');
 
 const cmpTitle = document.createElement('p');
 cmpTitle.classList.add('cmpTitle');
@@ -26,13 +29,20 @@ const cmpScore = document.createElement('p');
 cmpScore.classList.add('cmpScore');
 cmpScore.textContent =  `${computerWins}`;
 
-
-
-plrScoreBoard.appendChild(plrTitle)
-plrScoreBoard.appendChild(plrScore)
-
 cmpScoreBoard.appendChild(cmpTitle)
 cmpScoreBoard.appendChild(cmpScore)
+
+
+//Create in-game text 
+document.getElementById('.gameCommentText');
+
+const gameText = document.createElement('p');
+gameText.classList.add('gameText');
+gameText.textContent = "Choose Your Weapon!"
+
+gameCommentText.appendChild(gameText);
+
+
 
 
 
