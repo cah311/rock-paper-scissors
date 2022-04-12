@@ -60,7 +60,10 @@ playerSelectionR.addEventListener('click', function () {
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
-        plrScoreBoard.appendChild(plrScore)
+        plrScoreBoard.appendChild(plrScore);
+
+        gameText.textContent = "You Win! Rock beats Scissors";
+        gameCommentText.appendChild(gameText);
 
     } else if ((playerSelection == 'ROCK') && (computerSelection == 'PAPER')) {
         
@@ -71,11 +74,18 @@ playerSelectionR.addEventListener('click', function () {
         cmpScore.textContent =  `${computerWins}`;
         cmpScoreBoard.appendChild(cmpScore)
 
+        gameText.textContent = "You lose! Paper beats Rock";
+        gameCommentText.appendChild(gameText);
+
 
     } else if (playerSelection == computerSelection) {
         
         let result = ("It's a tie!");
         console.log(result);
+
+        gameText.textContent = "It's a tie!";
+        gameCommentText.appendChild(gameText);
+
         
     }
     console.log(playerWins);
@@ -96,26 +106,37 @@ playerSelectionP.addEventListener('click', function () {
     computerPlay();
     if ((playerSelection == 'PAPER') && (computerSelection == 'ROCK')) {
         
-        let result = ("You Win! Rock beats Scissors");
+        let result = ("You Win! Paper beats Rock");
         playerWins++;
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
         plrScoreBoard.appendChild(plrScore)
 
+        gameText.textContent = "You Win! Paper beats Rock";
+        gameCommentText.appendChild(gameText);
+
+
     } else if ((playerSelection == 'PAPER') && (computerSelection == 'SCISSORS')) {
         
-        let result = ("You lose! Paper beats Rock");
+        let result = ("You lose! Scissors beats Paper");
         computerWins++; 
         console.log(result);
 
         cmpScore.textContent =  `${computerWins}`;
         cmpScoreBoard.appendChild(cmpScore)
 
+        gameText.textContent = "You lose! Scissors beats Paper";
+        gameCommentText.appendChild(gameText);
+
+
     } else if (playerSelection == computerSelection) {
         
         let result = ("It's a tie!");
         console.log(result);
+
+        gameText.textContent = "It's a tie!";
+        gameCommentText.appendChild(gameText);
         
     }
     console.log(playerWins);
@@ -133,28 +154,39 @@ playerSelectionS.addEventListener('click', function () {
     playerSelection = "SCISSORS"
     console.log(playerSelection)
     computerPlay();
-    if ((playerSelection == 'SCISSORS') && (computerSelection == 'ROCK')) {
+    if ((playerSelection == 'SCISSORS') && (computerSelection == 'PAPER')) {
         
-        let result = ("You Win! Rock beats Scissors");
+        let result = ("You Win! Scissors beats Paper");
         playerWins++;
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
         plrScoreBoard.appendChild(plrScore)
 
-    } else if ((playerSelection == 'SCISSORS') && (computerSelection == 'PAPER')) {
+        gameText.textContent = "You Win! Scissors beats Paper";
+        gameCommentText.appendChild(gameText);
+
+
+    } else if ((playerSelection == 'SCISSORS') && (computerSelection == 'ROCK')) {
         
-        let result = ("You lose! Paper beats Rock");
+        let result = ("You lose! Rock beats Scissors");
         computerWins++; 
         console.log(result);
 
         cmpScore.textContent =  `${computerWins}`;
-        cmpScoreBoard.appendChild(cmpScore)
+        cmpScoreBoard.appendChild(cmpScore);
+
+        gameText.textContent = "You lose! Rock beats Scissors";
+        gameCommentText.appendChild(gameText);
+
 
     } else if (playerSelection == computerSelection) {
         
         let result = ("It's a tie!");
         console.log(result);
+
+        gameText.textContent = "It's a tie!";
+        gameCommentText.appendChild(gameText);
         
     }
     console.log(playerWins);
