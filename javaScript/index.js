@@ -7,7 +7,7 @@ let round = 0;
 
 //const container = document.getElementById('.scoareBoard');
 
-document.getElementById('.scoreBoard')
+document.getElementById('.plrScoreBoard')
 
 const plrTitle = document.createElement('p');
 plrTitle.classList.add('plrTitle');
@@ -15,6 +15,9 @@ plrTitle.textContent = "Player Score: ";
 const plrScore = document.createElement('p');
 plrScore.classList.add('plrScore');
 plrScore.textContent =  `${playerWins}`;
+
+document.getElementById('.cmpScoreBoard')
+
 
 const cmpTitle = document.createElement('p');
 cmpTitle.classList.add('cmpTitle');
@@ -25,11 +28,11 @@ cmpScore.textContent =  `${computerWins}`;
 
 
 
-scoreBoard.appendChild(plrTitle)
-scoreBoard.appendChild(plrScore)
+plrScoreBoard.appendChild(plrTitle)
+plrScoreBoard.appendChild(plrScore)
 
-scoreBoard.appendChild(cmpTitle)
-scoreBoard.appendChild(cmpScore)
+cmpScoreBoard.appendChild(cmpTitle)
+cmpScoreBoard.appendChild(cmpScore)
 
 
 
@@ -47,7 +50,7 @@ playerSelectionR.addEventListener('click', function () {
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
-        scoreBoard.appendChild(plrScore)
+        plrScoreBoard.appendChild(plrScore)
 
     } else if ((playerSelection == 'ROCK') && (computerSelection == 'PAPER')) {
         
@@ -56,7 +59,7 @@ playerSelectionR.addEventListener('click', function () {
         console.log(result);
 
         cmpScore.textContent =  `${computerWins}`;
-        scoreBoard.appendChild(cmpScore)
+        cmpScoreBoard.appendChild(cmpScore)
 
 
     } else if (playerSelection == computerSelection) {
@@ -88,7 +91,7 @@ playerSelectionP.addEventListener('click', function () {
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
-        scoreBoard.appendChild(plrScore)
+        plrScoreBoard.appendChild(plrScore)
 
     } else if ((playerSelection == 'PAPER') && (computerSelection == 'SCISSORS')) {
         
@@ -97,7 +100,7 @@ playerSelectionP.addEventListener('click', function () {
         console.log(result);
 
         cmpScore.textContent =  `${computerWins}`;
-        scoreBoard.appendChild(cmpScore)
+        cmpScoreBoard.appendChild(cmpScore)
 
     } else if (playerSelection == computerSelection) {
         
@@ -127,7 +130,7 @@ playerSelectionS.addEventListener('click', function () {
         console.log(result);
 
         plrScore.textContent =  `${playerWins}`;
-        scoreBoard.appendChild(plrScore)
+        plrScoreBoard.appendChild(plrScore)
 
     } else if ((playerSelection == 'SCISSORS') && (computerSelection == 'PAPER')) {
         
@@ -136,7 +139,7 @@ playerSelectionS.addEventListener('click', function () {
         console.log(result);
 
         cmpScore.textContent =  `${computerWins}`;
-        scoreBoard.appendChild(cmpScore)
+        cmpScoreBoard.appendChild(cmpScore)
 
     } else if (playerSelection == computerSelection) {
         
