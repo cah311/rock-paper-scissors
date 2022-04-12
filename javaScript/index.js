@@ -5,6 +5,36 @@ let playerSelection;
 let computerSelection;
 let round = 0; 
 
+//const container = document.getElementById('.scoareBoard');
+
+document.getElementById('.scoreBoard')
+
+const plrTitle = document.createElement('p');
+plrTitle.classList.add('plrTitle');
+plrTitle.textContent = "Player Score: ";
+const plrScore = document.createElement('p');
+plrScore.classList.add('plrScore');
+plrScore.textContent =  `${playerWins}`;
+
+const cmpTitle = document.createElement('p');
+cmpTitle.classList.add('cmpTitle');
+cmpTitle.textContent = "Computer Score: ";
+const cmpScore = document.createElement('p');
+cmpScore.classList.add('cmpScore');
+cmpScore.textContent =  `${computerWins}`;
+
+
+
+scoreBoard.appendChild(plrTitle)
+scoreBoard.appendChild(plrScore)
+
+scoreBoard.appendChild(cmpTitle)
+scoreBoard.appendChild(cmpScore)
+
+
+
+
+
 playerSelectionR = document.querySelector('#rBtn');
 playerSelectionR.addEventListener('click', function () {
     playerSelection = "ROCK"
@@ -16,11 +46,18 @@ playerSelectionR.addEventListener('click', function () {
         playerWins++;
         console.log(result);
 
+        plrScore.textContent =  `${playerWins}`;
+        scoreBoard.appendChild(plrScore)
+
     } else if ((playerSelection == 'ROCK') && (computerSelection == 'PAPER')) {
         
         let result = ("You lose! Paper beats Rock");
         computerWins++; 
         console.log(result);
+
+        cmpScore.textContent =  `${computerWins}`;
+        scoreBoard.appendChild(cmpScore)
+
 
     } else if (playerSelection == computerSelection) {
         
@@ -50,11 +87,17 @@ playerSelectionP.addEventListener('click', function () {
         playerWins++;
         console.log(result);
 
+        plrScore.textContent =  `${playerWins}`;
+        scoreBoard.appendChild(plrScore)
+
     } else if ((playerSelection == 'PAPER') && (computerSelection == 'SCISSORS')) {
         
         let result = ("You lose! Paper beats Rock");
         computerWins++; 
         console.log(result);
+
+        cmpScore.textContent =  `${computerWins}`;
+        scoreBoard.appendChild(cmpScore)
 
     } else if (playerSelection == computerSelection) {
         
@@ -83,11 +126,17 @@ playerSelectionS.addEventListener('click', function () {
         playerWins++;
         console.log(result);
 
+        plrScore.textContent =  `${playerWins}`;
+        scoreBoard.appendChild(plrScore)
+
     } else if ((playerSelection == 'SCISSORS') && (computerSelection == 'PAPER')) {
         
         let result = ("You lose! Paper beats Rock");
         computerWins++; 
         console.log(result);
+
+        cmpScore.textContent =  `${computerWins}`;
+        scoreBoard.appendChild(cmpScore)
 
     } else if (playerSelection == computerSelection) {
         
@@ -119,10 +168,6 @@ function computerPlay() {
 }
 
 
-if (computerWins === 5) {
-    alert("Computer Wins the match")
-} else if (playerWins === 5) {
-    alert("You win the match!")
-}
+
 
   
